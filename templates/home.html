@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>Home</h1>
+    <p>Welcome to the home page!</p>
+    {% for student in students %}
+    <p>{{ student.first_name }}</p>
+    <ul>
+      <li>{{student.last_name}}</li>
+      <li>{{student.id}}</li>
+    </ul>
+    {% endfor %}
+  </body>
+</html>
